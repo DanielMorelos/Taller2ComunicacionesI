@@ -91,5 +91,5 @@ function proporcion=error(SNR_db,received_SNR)%Funcion para hallar la relacion e
 proporciondb=abs(((SNR_db-received_SNR)/SNR_db))*100;%Diferencia porcentual entre la SNR calculada y la esperada
 fprintf('Diferencia porcentual entre la SNR calculada y la esperada: %f %% \n', proporciondb);
 proporcion=abs(((10^(SNR_db/10)-10^(received_SNR/10))/10^(SNR_db/10)))*100;%Diferencia porrcentual entre la potencia esperada y la calculada
-fprintf('Diferencia porrcentual entre la potencia esperada y la calculada: %f %% \n', proporcion);
+fprintf('Diferencia porcentual entre la potencia esperada y la calculada: %f %% \n', proporcion);
 end
